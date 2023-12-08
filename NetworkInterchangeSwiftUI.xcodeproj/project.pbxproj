@@ -11,6 +11,13 @@
 		C04CE3292B225C5B0029DE32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04CE3282B225C5B0029DE32 /* ContentView.swift */; };
 		C04CE32B2B225C5B0029DE32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04CE32A2B225C5B0029DE32 /* Assets.xcassets */; };
 		C04CE32E2B225C5B0029DE32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04CE32D2B225C5B0029DE32 /* Preview Assets.xcassets */; };
+		C04CE3392B225DEF0029DE32 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04CE3382B225DEF0029DE32 /* UserModel.swift */; };
+		C04CE33B2B225E950029DE32 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04CE33A2B225E950029DE32 /* WebService.swift */; };
+		C04CE33D2B2261F10029DE32 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04CE33C2B2261F10029DE32 /* UserViewModel.swift */; };
+		C04CE3402B2262080029DE32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04CE33F2B2262080029DE32 /* Constants.swift */; };
+		C0CBF5F72B22F5D200C16E2F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = C0CBF5F62B22F5D200C16E2F /* users.json */; };
+		C0CBF5F92B22F5F200C16E2F /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CBF5F82B22F5F200C16E2F /* LocalService.swift */; };
+		C0CBF5FB2B22F8C700C16E2F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CBF5FA2B22F8C700C16E2F /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		C04CE3282B225C5B0029DE32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C04CE32A2B225C5B0029DE32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C04CE32D2B225C5B0029DE32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C04CE3382B225DEF0029DE32 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C04CE33A2B225E950029DE32 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C04CE33C2B2261F10029DE32 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C04CE33F2B2262080029DE32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C0CBF5F62B22F5D200C16E2F /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		C0CBF5F82B22F5F200C16E2F /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		C0CBF5FA2B22F8C700C16E2F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0499AB82B22F561004354DA /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C0CBF5F62B22F5D200C16E2F /* users.json */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		C04CE31A2B225C5B0029DE32 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +73,13 @@
 		C04CE3252B225C5B0029DE32 /* NetworkInterchangeSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C0499AB82B22F561004354DA /* Api */,
+				C04CE33E2B2261F80029DE32 /* Constant */,
+				C04CE3372B225D840029DE32 /* Service */,
+				C04CE3362B225D7B0029DE32 /* ViewModel */,
+				C04CE3352B225D750029DE32 /* View */,
+				C04CE3342B225D6F0029DE32 /* Model */,
 				C04CE3262B225C5B0029DE32 /* NetworkInterchangeSwiftUIApp.swift */,
-				C04CE3282B225C5B0029DE32 /* ContentView.swift */,
 				C04CE32A2B225C5B0029DE32 /* Assets.xcassets */,
 				C04CE32C2B225C5B0029DE32 /* Preview Content */,
 			);
@@ -65,6 +92,48 @@
 				C04CE32D2B225C5B0029DE32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C04CE3342B225D6F0029DE32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C04CE3382B225DEF0029DE32 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C04CE3352B225D750029DE32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C04CE3282B225C5B0029DE32 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C04CE3362B225D7B0029DE32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C04CE33C2B2261F10029DE32 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C04CE3372B225D840029DE32 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C04CE33A2B225E950029DE32 /* WebService.swift */,
+				C0CBF5F82B22F5F200C16E2F /* LocalService.swift */,
+				C0CBF5FA2B22F8C700C16E2F /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C04CE33E2B2261F80029DE32 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				C04CE33F2B2262080029DE32 /* Constants.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CBF5F72B22F5D200C16E2F /* users.json in Resources */,
 				C04CE32E2B225C5B0029DE32 /* Preview Assets.xcassets in Resources */,
 				C04CE32B2B225C5B0029DE32 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +208,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C04CE3292B225C5B0029DE32 /* ContentView.swift in Sources */,
+				C04CE3392B225DEF0029DE32 /* UserModel.swift in Sources */,
+				C0CBF5FB2B22F8C700C16E2F /* NetworkService.swift in Sources */,
+				C04CE33B2B225E950029DE32 /* WebService.swift in Sources */,
+				C04CE33D2B2261F10029DE32 /* UserViewModel.swift in Sources */,
 				C04CE3272B225C5B0029DE32 /* NetworkInterchangeSwiftUIApp.swift in Sources */,
+				C0CBF5F92B22F5F200C16E2F /* LocalService.swift in Sources */,
+				C04CE3402B2262080029DE32 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
